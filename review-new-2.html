@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>OPR</title>
+
+
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-select.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/mystyles.css" rel="stylesheet">
+    <link href="assets/css/review-green.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="#"> <img
+                    src="assets/img/logo2.png" alt="logo" style="float:left; margin:0; padding:0"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <a class="navbar-brand logo"
+                   href="#">
+                    <img src="assets/img/rate2.png" alt="rate now">
+                </a>
+
+
+                <li class="dropdown">
+
+
+                    <a id="dLabel" role="button" data-toggle="dropdown" data-target="#"
+                       href="#">
+                        <i class="glyphicon glyphicon-bell"></i>
+                    </a>
+
+                    <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+
+                        <div class="notification-heading"><h4 class="menu-title">Notifications</h4>
+
+                        </div>
+                        <li class="divider"></li>
+                        <div class="notifications-wrapper">
+                            <a class="content"
+                               href="#">
+
+                                <div class="notification-item">
+                                    <h4 class="item-title">Evaluation Deadline 1 · day ago</h4>
+                                    <p class="item-info">Marketing 101, Video Assignment</p>
+                                </div>
+
+                            </a>
+                            <a class="content"
+                               href="#">
+                                <div class="notification-item">
+                                    <h4 class="item-title">Evaluation Deadline 1 · day ago</h4>
+                                    <p class="item-info">Marketing 101, Video Assignment</p>
+                                </div>
+                            </a>
+                            <a class="content"
+                               href="#">
+                                <div class="notification-item">
+                                    <h4 class="item-title">Evaluation Deadline 1 • day ago</h4>
+                                    <p class="item-info">Marketing 101, Video Assignment</p>
+                                </div>
+                            </a>
+                            <a class="content"
+                               href="#">
+                                <div class="notification-item">
+                                    <h4 class="item-title">Evaluation Deadline 1 • day ago</h4>
+                                    <p class="item-info">Marketing 101, Video Assignment</p>
+                                </div>
+
+                            </a>
+                            <a class="content"
+                               href="#">
+                                <div class="notification-item">
+                                    <h4 class="item-title">Evaluation Deadline 1 • day ago</h4>
+                                    <p class="item-info">Marketing 101, Video Assignment</p>
+                                </div>
+                            </a>
+                            <a class="content"
+                               href="#">
+                                <div class="notification-item">
+                                    <h4 class="item-title">Evaluation Deadline 1 • day ago</h4>
+                                    <p class="item-info">Marketing 101, Video Assignment</p>
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                    </ul>
+
+
+                </li>
+
+                <li><a href="#">Logout<span
+                        class="sr-only">(current)</span></a></li>
+                <li>
+                    <div id="container">
+                        <div id="name">
+                            O
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<div id="categories-bar" class="col-xs-12">
+    <div class="container">
+        <div style="margin: 2px;  margin-left: -8px;">
+            <a href="#">Hotels</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+
+            <a href="#">Restaurants</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="#">Activities</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="search-bar">
+    <div class="container">
+        <form action="" method="post" class="form" >
+            <input type="hidden" name="csrfmiddlewaretoken"
+                   value="LyENpvfURdHMm3mIW6wL68pZhGPysShRTCol4zNKrMaVrYLq3Xpn1b157Oson6Ba">
+            <div class="input-group">
+                <select class="selectpicker" name="type" id="selector">
+                    <option selected="">Hotel</option>
+                    <option>Restaurant</option>
+                    <option>Activity</option>
+                </select>
+
+                <input type="text" id="id_Place" class="form-control search-bar-text" name="Place"
+                       placeholder="Location..." autocomplete="off">
+                <span class="input-group-btn">
+                    <button class="btn btn-default find" type="submit">Find</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid review-box">
+
+        <div class="col-md-12 col-xs-12">
+
+           <form method="post" action="" class="form form-horizontal">
+
+             <div class="row hotel-details-box">
+             <div class="col-md-10 col-xs-12 col-sm-10">
+             <img src="assets/img/greenhotel.jpeg" class="hotel-profile-img">
+                 <div class="col-md-6 col-xs-12 col-sm-6 hotel-details">
+                     <span class="hotel-title">Green Hotel</span>
+                     <div class="col-md-4 col-xs-6 fieldWrapper rating pull-right no-padding">
+                         <input class="rating-input" id="general-rating-1" name="general_rating" type="radio" value="5">
+                         <label for="general-rating-1" class="rating-star">5</label>
+                         <input class="rating-input" id="general-rating-2" name="general_rating" type="radio" value="4">
+                         <label for="general-rating-2" class="rating-star">4</label>
+                         <input class="rating-input" id="general-rating-3" name="general_rating" type="radio" value="3">
+                         <label for="general-rating-3" class="rating-star">3</label>
+                         <input class="rating-input" id="general-rating-4" name="general_rating" type="radio" value="2">
+                         <label for="general-rating-4" class="rating-star">2</label>
+                         <input class="rating-input" id="general-rating-5" name="general_rating" type="radio" value="1">
+                         <label for="general-rating-5" class="rating-star">1</label>
+                     </div>
+                 </div>
+             </div>
+
+             </div>
+
+
+
+</div>
+
+
+ <section class="review-content">
+         
+              <div class="form-group col-md-12 col-xs-12">
+              <label for="title" class="col-md-1">Title</label>
+              
+                <div class="col-md-8 col-xs-12">
+                <input type="text" class="form-control" name="title" id="title">
+               </div>
+               </div>
+
+              <div class="form-group col-md-12 col-xs-12">
+              <label for="review" class="col-md-1">Review</label>
+              
+                <div class="col-md-8 col-xs-12">
+                <textarea class="form-control" rows="7" name="review" id="review">
+                </textarea>
+               </div>
+               </div>
+
+               <div class="form-group col-md-12 col-xs-12">
+               <label for="datepicker" class="col-md-1 col-xs-12">When</label>
+              <div class="col-md-4 col-xs-12 col-sm-6">
+               <div class="no-padding no-margin">
+
+             <input type="text" class="form-control" placeholder="pick a date" id="datepicker" name="when"><i class="glyphicon glyphicon-menu-down date-arrow"></i>
+             </div>
+
+               </div>
+               </div>
+
+
+     <div class="form-group col-md-12 col-xs-12">
+
+         <label class="col-md-1">Type</label>
+
+
+         <div class="col-md-11 col-xs-12 col-sm-12">
+
+             <div class="type-options col-md-8 col-xs-12 no-padding pull-left">
+                 <input type="radio" id="business" name="type" checked="checked" />
+                 <label class="col-md-3 col-sm-4 col-xs-4 pull-left" for="business">Business</label>
+                 <input type="radio" id="family" name="type"/>
+                 <label class="col-md-3 col-sm-4  col-xs-4 pull-left" for="family">Family</label>
+                 <input type="radio" id="friends" name="type"/>
+                 <label class="col-md-3 col-sm-4 col-xs-4 pull-left" for="friends">Friends</label>
+
+
+             </div>
+
+         </div>
+     </div>
+
+
+
+</section>
+
+
+<section class="review-criterias">
+
+    <div class="form-group col-md-12 col-xs-12">
+
+        <label for="review" class="col-md-1">Criteria</label>
+
+        <div class="col-md-11 col-xs-12 col-sm-12">
+
+    <div class="col-md-12 col-xs-12 criteria-box">
+
+<button class="accordion col-md-4 col-xs-6 pull-left"><i class="glyphicon glyphicon-menu-down"></i> Environmental</button>
+        <div class="col-md-3 col-xs-6 general-criteria-rating">
+            <div class="fieldWrapper rating">
+
+                <input class="rating-input" id="cat_enviromental_1" name="category_3" type="radio" value="5">
+                <label for="cat_enviromental_1" class="rating-star">5</label>
+
+                <input class="rating-input" id="cat_enviromental_2" name="category_3" type="radio" value="4">
+                <label for="cat_enviromental_2" class="rating-star">4</label>
+
+                <input class="rating-input" id="cat_enviromental_3" name="category_3" type="radio" value="3">
+                <label for="cat_enviromental_3" class="rating-star">3</label>
+
+                <input class="rating-input" id="cat_enviromental_4" name="category_3" type="radio" value="2">
+                <label for="cat_enviromental_4" class="rating-star">2</label>
+
+                <input class="rating-input" id="cat_enviromental_5" name="category_3" type="radio" value="1">
+                <label for="cat_enviromental_5" class="rating-star">1</label>
+
+            </div>
+        </div>
+
+
+<div class="panel col-md-12 col-xs-12">
+    <div class="col-md-10 col-xs-12 inner-criteria-wrapper">
+
+
+    <div class="col-md-10 col-xs-12">
+        <div class="fieldWrapper rating">
+
+            <span>Energy</span>
+
+            <input class="rating-input" id="sub_cat_enviromental_1" name="energy" type="radio" value="5">
+            <label for="sub_cat_enviromental_1" class="rating-star">5</label>
+
+            <input class="rating-input" id="sub_cat_enviromental_2" name="energy" type="radio" value="4">
+            <label for="sub_cat_enviromental_2" class="rating-star">4</label>
+
+            <input class="rating-input" id="sub_cat_enviromental_3" name="energy" type="radio" value="3">
+            <label for="sub_cat_enviromental_3" class="rating-star">3</label>
+
+            <input class="rating-input" id="sub_cat_enviromental_4" name="energy" type="radio" value="2">
+            <label for="sub_cat_enviromental_4" class="rating-star">2</label>
+
+            <input class="rating-input" id="sub_cat_enviromental_5" name="energy" type="radio" value="1">
+            <label for="sub_cat_enviromental_5" class="rating-star">1</label>
+
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+
+
+    <div class="col-md-12 col-xs-12 criteria-box">
+
+        <button class="accordion col-md-4 col-xs-6 pull-left"><i class="glyphicon glyphicon-menu-down"></i> Cultural</button>
+        <div class="col-md-3 col-xs-6 general-criteria-rating">
+            <div class="fieldWrapper rating">
+                <input class="rating-input" id="cat_cultural_1" name="caltural" type="radio" value="5">
+                <label for="cat_cultural_1" class="rating-star">5</label>
+
+                <input class="rating-input" id="cat_cultural_2" name="caltural" type="radio" value="4">
+                <label for="cat_cultural_2" class="rating-star">4</label>
+
+                <input class="rating-input" id="cat_cultural_3" name="caltural" type="radio" value="3">
+                <label for="cat_cultural_3" class="rating-star">3</label>
+
+                <input class="rating-input" id="cat_cultural_4" name="caltural" type="radio" value="2">
+                <label for="cat_cultural_4" class="rating-star">2</label>
+
+                <input class="rating-input" id="cat_cultural_5" name="caltural" type="radio" value="1">
+                <label for="cat_cultural_5" class="rating-star">1</label>
+            </div>
+        </div>
+
+        <div class="panel col-md-12 col-xs-12">
+            <div class="col-md-10 col-xs-12 inner-criteria-wrapper">
+                <div class="col-md-10 col-xs-12">
+                    <div class="fieldWrapper rating">
+                        <span>architecture</span>
+
+                        <input class="rating-input" id="sub_architecture_1" name="architecture" type="radio" value="5">
+                        <label for="sub_architecture_1" class="rating-star">5</label>
+
+                        <input class="rating-input" id="sub_architecture_2" name="architecture" type="radio" value="4">
+                        <label for="sub_architecture_2" class="rating-star">4</label>
+
+                        <input class="rating-input" id="sub_architecture_3" name="architecture" type="radio" value="3">
+                        <label for="sub_architecture_3" class="rating-star">3</label>
+
+                        <input class="rating-input" id="sub_architecture_4" name="architecture" type="radio" value="2">
+                        <label for="sub_architecture_4" class="rating-star">2</label>
+
+                        <input class="rating-input" id="sub_architecture_5" name="architecture" type="radio" value="1">
+                        <label for="sub_architecture_5" class="rating-star">1</label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<div class="col-md-12 col-xs-12 criteria-box">
+
+<button class="accordion col-md-4 col-xs-6 pull-left"><i class="glyphicon glyphicon-menu-down"></i> Social</button>
+    <div class="col-md-3 col-xs-6 general-criteria-rating">
+        <div class="fieldWrapper rating">
+            <input class="rating-input" id="cat_social_1" name="social" type="radio" value="5">
+            <label for="cat_social_1" class="rating-star">5</label>
+
+            <input class="rating-input" id="cat_social_2" name="social" type="radio" value="4">
+            <label for="cat_social_2" class="rating-star">4</label>
+
+            <input class="rating-input" id="cat_social_3" name="social" type="radio" value="3">
+            <label for="cat_social_3" class="rating-star">3</label>
+
+            <input class="rating-input" id="cat_social_4" name="social" type="radio" value="2">
+            <label for="cat_social_4" class="rating-star">2</label>
+
+            <input class="rating-input" id="cat_social_5" name="social" type="radio" value="1">
+            <label for="cat_social_5" class="rating-star">1</label>
+        </div>
+    </div>
+<div class="panel col-md-12 col-xs-12">
+    <div class="col-md-10 col-xs-12 inner-criteria-wrapper">
+
+
+        <div class="col-md-10 col-xs-12 criteria-box">
+
+            <div class="fieldWrapper rating">
+                <span>Social Sub</span>
+                <input class="rating-input" id="category_2_0" name="category_2" type="radio" value="5">
+                <label for="category_2_0" class="rating-star">5</label>
+
+                <input class="rating-input" id="category_2_1" name="category_2" type="radio" value="4">
+                <label for="category_2_1" class="rating-star">4</label>
+
+                <input class="rating-input" id="category_2_2" name="category_2" type="radio" value="3">
+                <label for="category_2_2" class="rating-star">3</label>
+
+                <input class="rating-input" id="category_2_3" name="category_2" type="radio" value="2">
+                <label for="category_2_3" class="rating-star">2</label>
+
+                <input class="rating-input" id="category_2_4" name="category_2" type="radio" value="1">
+                <label for="category_2_4" class="rating-star">1</label>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+                <div class="submit-box form-group col-md-12 col-sm-12 col-xs-12">
+                    <input type="submit" value="Submit Review" class="col-md-5 col-xs-12 btn btn-info">
+                </div>
+    </div>
+    </div>
+</section>
+
+
+               
+            </form>
+
+        </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+<div class="pac-container pac-logo"
+     style="display: none; width: 768px; position: absolute; left: 428px; top: 135px;"></div>
+
+
+</body>
+</html>

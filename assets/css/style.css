@@ -1,0 +1,316 @@
+
+.navbar {
+    background-color: #d6d6d6 !important;
+    padding: 5px 0px;
+}
+
+.logo {
+    padding: 0 !important;
+}
+
+#container {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #333;
+}
+
+#name {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.cc-selector input {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.cc-selector {
+    display: table;
+    margin: 0 auto;
+}
+
+
+.cc-selector input:active + .type {
+    opacity: .9;
+}
+
+.cc-selector input:checked + .type {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.type {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.5) grayscale(1) opacity(1);
+    -moz-filter: brightness(1.5) grayscale(1) opacity(1);
+    filter: brightness(1.5) grayscale(1) opacity(1);
+}
+
+.type:hover {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras */
+a:visited {
+    color: #888
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: .3em;
+}
+
+#search_input {
+    margin: auto;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+
+.dropdown {
+    display: inline-block;
+    margin-left: 20px;
+    /*  padding: 10px;*/
+}
+
+.glyphicon-bell {
+
+    font-size: 1.5rem;
+}
+
+.notifications {
+    min-width: 420px;
+    background-color: #ededed !important;
+}
+
+.notifications-wrapper {
+    overflow: auto;
+    max-height: 250px;
+}
+
+.menu-title {
+    color: #ff7788;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.glyphicon-circle-arrow-right {
+    margin-left: 10px;
+}
+
+.notification-heading, .notification-footer {
+    padding: 2px 10px;
+}
+
+.dropdown-menu.divider {
+    margin: 5px 0;
+}
+
+.item-title {
+
+    font-size: 1.3rem;
+    color: #000;
+
+}
+
+.notifications a.content {
+    text-decoration: none;
+    background: #ccc;
+
+}
+
+.notification-item {
+    padding: 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .type {
+
+        width: 110px;
+        height: 140px;
+    }
+
+    .notifications {
+        min-width: 100%;
+    }
+}
+/* end */
+
+
+body {
+    padding-top: 70px;
+    padding-bottom: 170px;
+    background-color: #f5f4ef;
+}
+
+.modal-dialog {
+    width: 80%;
+}
+
+.map-frame {
+    height: 70vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.result-btn {
+    margin: 10px;
+}
+
+.search-bar {
+    background-color: #2d96a0;
+    padding: 25px;
+    margin-bottom: 10px;
+    margin-left:-15px;
+}
+
+.search-bar .bootstrap-select{
+    width: 30% !important;
+    border-right:0px;
+}
+.search-bar .btn-default{
+    border-right: 0px;
+}
+#selector {
+    min-width: 110px;
+    border: solid 1px red;
+    border-left: 0px;
+}
+
+.search-bar-text {
+   /* width: 70% !important; */
+}
+
+#index-form {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 30px;
+    border-radius: 32px;
+    width: 60%;
+    margin: auto;
+    margin-top: 68px;
+}
+
+.custom-btn {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#sort-bar {
+    background-color: #afe7ec;
+    border-radius: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+}
+
+#filter-column {
+    background-color: rgba(206, 219, 220, 0.16);
+    /*border-radius: 15px;*/
+    margin-top: 66px;
+}
+
+.rating-globe {
+    margin: -3px;
+    height: 20px;
+    width: 20px;
+}
+
+#add-review {
+    margin-left: 5em;
+    color: white;
+}
+
+#categories-bar {
+    /*padding-left: 105px;*/
+    background-color: white;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 19px;
+}
+
+#filter-image {
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+
+.rating {
+    /*overflow: hidden;*/
+    /*display: inline-block;*/
+    /*font-size: 0;*/
+    /*position: relative;*/
+}
+.rating-input {
+    float: left;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 0 0 -16px !important;
+    opacity: 0;
+}
+.rating:hover .rating-star:hover,
+.rating:hover .rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+    background-position: 0 0;
+}
+.rating-star, .rating:hover .rating-star {
+    position: relative;
+    float: right;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/rateglobes.png') 0 -20px;
+    font-size: 0;
+    background-size: cover;
+}
+
+
+.fieldWrapper > h4 {
+    display: inline;
+}
+
+
+.result-element{
+    background-color: white;
+}
+
+.search-photo{
+    padding: 0;
+}
+
+.custom-progress{
+    width: 100px;
+    height: 17px;
+    margin-bottom: 0;
+    display: inline-block;
+    background-color: white;
+}
